@@ -15,6 +15,7 @@
 ### 🐛 Bug fixes
 
 - Fix OTel date conversion ([#48161](https://github.com/expo/expo/pull/48161) by [@Ubax](https://github.com/Ubax))
+- [iOS] Stop overlapping dispatches from sending the same pending rows twice. `dispatchEvents()` now returns without dispatching when a dispatch is already in progress. ([#48883](https://github.com/expo/expo/pull/48883) by [@tsapeta](https://github.com/tsapeta))
 - [Android] Explicitly enable `buildFeatures.buildConfig`, required by AGP 9. ([#47729](https://github.com/expo/expo/pull/47729) by [@gabrieldonadel](https://github.com/gabrieldonadel))
 
 ### 💡 Others
